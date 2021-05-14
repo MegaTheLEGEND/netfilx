@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <header>
+    <nav>
+      <div id="icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1024px-Apple_logo_white.svg.png" id="header-img"></div>
+      <div id="menu"><a class="nav-link" href=#join-form>Join Us</a><a class="nav-link" href=#general-features>Features</a><a class="nav-link" href=#prices-breakdown>Prices</a><a class="nav-link" href=#youtube>Preview</a></div>
+    </nav>
+  </header>
+  <main>
+
+    <div id="banner"  class="sections"> <img id="banner-img" src="https://bit.ly/2OQMcup" alt="The logo of Disney Plus. The Disney sign with a plus sign." > </div>
+    <div id="signup" class="sections">
+      <H2>Join now!</H2>
+      <form action="https://www.freecodecamp.com/email-submit">
+        <input type="email" required />
+        <input type="submit" />
+      </form>
+    </div>
+    <div id="prices" class="sections">
+      <div class="feature-quote" id="quotea"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1024px-Apple_logo_white.svg.png" class="feature-icon">
+        <div class="quote">Gain access to hundreds of the most beloved and rare films in history.</div>
+      </div>
+      <div class="feature-quote" id="quoteb"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Apple_logo_white.svg/1024px-Apple_logo_white.svg.png" class="feature-icon">
+        <div class="quote"> Join the millions of subscribers in live chat rooms in Hulu and ESPN livestreams</div>
+      </div>
+    </div>
+    <div id="features" class="sections">
+      <div class="feature-items">
+        <div class="number-price" class="feature-items-details">$2</div>
+        <hr align="center" width="50%" noshade>
+        <div id="featured-details" class="feature-items-details">
+          <ul>
+            <li>sdsd</li><li>sdsd</li><li>sdsd</li><li>sdsd</li><li>sdsd</li>
+          </ul>
+        </div>
+      </div>
+      <div class="feature-items">
+        <div class="number-price" class="feature-items-details">$9</div>
+        <hr align="center" width="50%" noshade>
+        <div id="featured-details" class="feature-items-details"> <ul>
+            <li>sdsd</li><li>sdsd</li><li>sdsd</li><li>sdsd</li><li>alsdjj dfjasdj askjdaskldj askldjkladj </li><li>alsdjj dfjasdj askjdaskldj askldjkladj </li><li>sdsd...</li>
+          </ul></div>
+      </div>
+    </div>
+
+    <div id="youtube" class="sections"><iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gdUYE-U-5Og" frameborder="0" align="middle" allowfullscreen></iframe></div>
+  </main>
+  <footer>
+    <div id="foota">sfsdfdf<br>
+      <hr align="left" width="50%" noshade>sfsdfdf<br>sfsdfdf<br></div>
+    <div id="footb">sfsdfdf<br>
+      <hr align="left" width="50%" noshade>sfsdfdf<br></div>
+    <div id="footc">sfsdfdf<br>sfsdfdf<br></div>
+  </footer>
+
+</body>
+
+</html>
+<style>
+  body {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  margin: 0%;
+  font-family: helvetica;
+  color: white;
+}
+
+header {
+  margin: auto;
+  background-color: black;
+  height: 100px;
+  width: 1000px;
+}
+
+nav {
+  background-color: black;
+  position: fixed;
+  margin: auto;
+  height: 100px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  margin: auto;
+  background-color: black;
+  height: auto;
+  width: 1000px;
+}
+footer {
+  background-color: black;
+  height: 100px;
+  width: 1000px;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#header-img {
+  height: 100%;
+  width: 100%;
+}
+#icon {
+  background-color:black;
+  height: 100px;
+  width: 100px;
+}
+
+#menu {
+  background-color: black;
+  height: 100px;
+  width: 500px;
+}
+
+#banner {
+  height: 50%;
+}
+
+#banner-img{
+  display: block;margin: auto; width: 100%;height: auto; text-align: center; justify-content: center;
+}
+
+#signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#prices {
+  display: grid;
+  grid-template-areas:
+    ". . . . . . "
+    ". quote_a quote_a quote_a quote_a . "
+    ". quote_a quote_a quote_a quote_a . "
+    ". . . . . . "
+    ". . . . . . "
+    ". quote_b quote_b quote_b quote_b . "
+    ". quote_b quote_b quote_b quote_b . "
+    ". . . . . . ";
+}
+
+.feature-quote {
+  display: grid; height: 100px;
+  grid-template-areas:
+    "icon icon . quote quote quote"
+    "icon icon . quote quote quote"
+    "icon icon . quote quote quote";
+}
+
+#quotea {
+  grid-area: quote_a;
+  background-color: black;
+}
+#quoteb {
+  grid-area: quote_b;
+  background-color: black;
+}
+
+.feature-icon {
+  grid-area: icon;
+  background-color: black;
+  max-height: 100%;
+  width: 100px;
+}
+.quote {
+  grid-area: quote;
+  background-color: black;
+  width: 500px;
+}
+#features {
+  display: flex;
+  justify-content: space-around;
+  background-color: grey;
+}
+
+.number-price {
+  background-color: grey;
+  height: 100px;
+  width: 100%;
+ color: white;
+  font-size: 100px;
+  font-weight: 200;
+  text-align: center;
+}
+
+#featured-details {
+  background-color:black;
+  height: 250px;
+  width: 100%;
+}
+
+.sections {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+}
+
+.feature-items {
+  height: 400px;
+  width: 25%;
+  background-color: grey;
+  
+}
+
+.feature-items-details{
+ 
+}
+
+#video {
+  margin: auto;
+  display: block;
+}
+
+@media screen and (max-width: 1900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    margin: 0%;
+  }
+}
+
+</style> 
